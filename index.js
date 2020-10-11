@@ -5,7 +5,6 @@ var student=require("./student");
 var app=express();
 app.use(body.json());
 app.get("/",(req,res)=>{
- //res.sendFile(ap.join("/data/data/com.termux/files/home/storage/shared/htdocs","login.html"));
  res.json(student);
 });
 app.post("/login",(req,res)=>{
